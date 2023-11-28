@@ -69,8 +69,22 @@
 #! 6. String Lists
 #*    Ask the user for a string and print out whether this string is a palindrome or not.
 
-string = str(input("Please enter a string: "))
-if string[::-1] == string:
-    print("It's polindrom: ", string)
-else:
-    print("It isn't polindrom: ", string)
+# string = str(input("Please enter a string: "))
+# if string[::-1] == string:
+#     print("It's polindrom: ", string)
+# else:
+#     print("It isn't polindrom: ", string)
+
+#? =================================================================================================================
+
+#! 7. List Comprehensions
+#*    Let’s say I give you a list saved in a variable:
+#*    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+#*    Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+number = [32, 12, 142, 211, 232, 443, 22, 12, 53, 23, 43, 45, 43, 33, 32]
+result = []
+for i in number:
+    if i % 2 == 0:
+        result.append(i)
+print(result)
