@@ -136,3 +136,70 @@
 # compare_choices(choice1, choice2)
 # # End the game
 # print("Thank you for playing!")
+
+## =================================================================================================================
+
+#! 9. Guessing Game One
+#*    Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number,
+#*    then tell them whether they guessed too low, too high, or exactly right.
+# import random
+
+# random_number = random.randint(1, 9)
+# game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+
+# if game_num == random_number:
+#     print(f'You are WIN!!!')
+# elif game_num < random_number:
+#     print(f'This number is LOW!!!')
+#     game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#     if game_num == random_number:
+#         print(f'You are WIN!!!')
+#     elif game_num < random_number:
+#         print(f'This number is LOW!!!')
+#         game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         if game_num == random_number:
+#             print(f'You are WIN!!!')
+#         elif game_num < random_number:
+#             print(f'This number is LOW!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         elif game_num > random_number:
+#             print(f'This nomber is HIGHT!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#     elif game_num > random_number:
+#         print(f'This nomber is HIGHT!!!')
+#         game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         if game_num == random_number:
+#             print(f'You are WIN!!!')
+#         elif game_num < random_number:
+#             print(f'This number is LOW!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         elif game_num > random_number:
+#             print(f'This nomber is HIGHT!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+# elif game_num > random_number:
+#     print(f'This nomber is HIGHT!!!')
+#     game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#     if game_num == random_number:
+#         print(f'You are WIN!!!')
+#     elif game_num < random_number:
+#         print(f'This number is LOW!!!')
+#         game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         if game_num == random_number:
+#             print(f'You are WIN!!!')
+#         elif game_num < random_number:
+#             print(f'This number is LOW!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         elif game_num > random_number:
+#             print(f'This nomber is HIGHT!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#     elif game_num > random_number:
+#         print(f'This nomber is HIGHT!!!')
+#         game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         if game_num == random_number:
+#             print(f'You are WIN!!!')
+#         elif game_num < random_number:
+#             print(f'This number is LOW!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
+#         elif game_num > random_number:
+#             print(f'This nomber is HIGHT!!!')
+#             game_num = int(input("Please enter a number from 1 to 9 (including 1 and 9): "))
