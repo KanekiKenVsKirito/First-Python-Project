@@ -25,7 +25,21 @@
 #*    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 #*    and write a program that prints out all the elements of the list that are less than 5.
 
-a = [1, 1, 2, 3, 5, 8, 13, 4, 21, 34, 55, 89]
-for i in a:
-    if i < 5:
-        print(i)
+# a = [1, 1, 2, 3, 5, 8, 13, 4, 21, 34, 55, 89]
+# for i in a:
+#     if i < 5:
+#         print(i)
+
+#? =================================================================================================================
+
+#! 4. Divisors
+#*    Create a program that asks the user for a number and then prints out a list of all the divisors of that number.
+
+num = int(input("Number: "))
+
+number = []
+
+for i in range(1, num + 1):
+    if num % i == 0:
+        number.append(i)
+print(f"The number: {num}, and divisors: {number}")
