@@ -35,11 +35,31 @@
 #! 4. Divisors
 #*    Create a program that asks the user for a number and then prints out a list of all the divisors of that number.
 
-num = int(input("Number: "))
+# num = int(input("Number: "))
 
-number = []
+# number = []
 
-for i in range(1, num + 1):
-    if num % i == 0:
-        number.append(i)
-print(f"The number: {num}, and divisors: {number}")
+# for i in range(1, num + 1):
+#     if num % i == 0:
+#         number.append(i)
+# print(f"The number: {num}, and divisors: {number}")
+
+#? =================================================================================================================
+
+#! 5. List Overlap
+#*    Take two lists, say for example these two:
+#*    a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+#*    b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+#*    and write a program that returns a list that contains only the elements that are common between the lists (without duplicates).
+
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 20]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20]
+
+result = set()
+
+for num1 in a:
+    if num1 in b:
+        result.add(num1)
+result = list(result)
+
+print(result)
