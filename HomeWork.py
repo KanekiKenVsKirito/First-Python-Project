@@ -52,14 +52,25 @@
 #*    b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 #*    and write a program that returns a list that contains only the elements that are common between the lists (without duplicates).
 
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 20]
-b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20]
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 20]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20]
 
-result = set()
+# result = set()
 
-for num1 in a:
-    if num1 in b:
-        result.add(num1)
-result = list(result)
+# for num1 in a:
+#     if num1 in b:
+#         result.add(num1)
+# result = list(result)
 
-print(result)
+# print(result)
+
+#? =================================================================================================================
+
+#! 6. String Lists
+#*    Ask the user for a string and print out whether this string is a palindrome or not.
+
+string = str(input("Please enter a string: "))
+if string[::-1] == string:
+    print("It's polindrom: ", string)
+else:
+    print("It isn't polindrom: ", string)
