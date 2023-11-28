@@ -82,9 +82,57 @@
 #*    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 #*    Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
 
-number = [32, 12, 142, 211, 232, 443, 22, 12, 53, 23, 43, 45, 43, 33, 32]
-result = []
-for i in number:
-    if i % 2 == 0:
-        result.append(i)
-print(result)
+# number = [32, 12, 142, 211, 232, 443, 22, 12, 53, 23, 43, 45, 43, 33, 32]
+# result = []
+# for i in number:
+#     if i % 2 == 0:
+#         result.append(i)
+# print(result)
+
+## =================================================================================================================
+
+# # 8. Rock Paper Scissors
+# #    Make a two-player Rock-Paper-Scissors game using input().
+# # Define the possible choices
+# choices = ["rock", "paper", "scissors"]
+
+# # Define the rules of the game
+# rules = {
+#     "rock": "scissors", # rock beats scissors
+#     "paper": "rock", # paper beats rock
+#     "scissors": "paper" # scissors beats paper
+# }
+
+# # Define a function to get the valid choice from the player
+# def get_choice(player):
+#     # Ask the player for their choice
+#     choice = input(f"Player {player}, enter your choice (rock, paper, or scissors): ").lower()
+#     # Check if the choice is valid
+#     while choice not in choices:
+#         # If not, ask again
+#         print("Invalid choice. Please try again.")
+#         choice = input(f"Player {player}, enter your choice (rock, paper, or scissors): ").lower()
+#     # Return the valid choice
+#     return choice
+
+# # Define a function to compare the choices and determine the winner
+# def compare_choices(choice1, choice2):
+#     # If the choices are the same, it is a tie
+#     if choice1 == choice2:
+#         print("It is a tie.")
+#     # If the choice1 beats the choice2, player 1 wins
+#     elif rules[choice1] == choice2:
+#         print("Player 1 wins.")
+#     # Otherwise, player 2 wins
+#     else:
+#         print("Player 2 wins.")
+
+# # Start the game
+# print("Welcome to the Rock-Paper-Scissors game!")
+# # Get the choices from the players
+# choice1 = get_choice(1)
+# choice2 = get_choice(2)
+# # Compare the choices and announce the winner
+# compare_choices(choice1, choice2)
+# # End the game
+# print("Thank you for playing!")
